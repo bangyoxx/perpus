@@ -1,0 +1,12 @@
+CREATE DATABASE perpustakaan;
+
+USE perpustakaan;
+
+CREATE TABLE buku (
+    id_buku INT AUTO_INCREMENT PRIMARY KEY,
+    judul VARCHAR(255) NOT NULL,
+    pengarang VARCHAR(255) NOT NULL,
+    penerbit VARCHAR(255) NOT NULL,
+    tahun_terbit YEAR,
+    kategori VARCHAR(100)
+);
